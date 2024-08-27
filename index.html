@@ -59,3 +59,65 @@
   </p>
 </body>
 </html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Inline and Block Elements</title>
+</head>
+<body>
+    <h3>Basic Form</h3>
+    <span>inline</span>
+    <strong>block</strong>
+
+    <form>
+        <div>
+            <label for="firstname">Name</label>
+            <input type="text" name="firstname" id="firstname" required autofocus minlength="6" maxlength="18">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}",placeholder="enter your gmail">
+        </div>
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob" required>
+        </div>
+        <div>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="male" value="male" required> Male
+            <input type="radio" name="gender" id="female" value="female" required> Female
+        </div>
+        <div>
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" required>
+        </div>
+        <div>
+            <label for="city">City</label>
+            <select name="city" id="city" required>
+                <option value="">Chennai</option>
+                <option value="">Trichy</option>
+                <option value="">Madurai</option>
+                <option value="">Kovai</option>
+            </select>
+        </div>
+        <div>
+            <label for="pincode">Pincode</label>
+            <input type="number" name="pincode" id="pincode" required>
+        </div>
+        <div>
+            <label for="declaration">Hereby I declare all the above information given is true</label>
+            <input type="checkbox" name="declaration" id="declaration" required>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
