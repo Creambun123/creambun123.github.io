@@ -34,6 +34,7 @@ input {
     background-color: grey;
 
 }
+/*adding box shadow for couse dropdown*/
 .alter {
     border: 1px solid black; 
     padding: 5px; 
@@ -43,7 +44,7 @@ input {
     
 }
 
-
+/*adding box shadow for place dropdown*/
 .alter2 {
     border: 1px solid black; 
     padding: 5px; 
@@ -51,4 +52,7 @@ input {
     border-radius: 4px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     
+}
+#terms2:checked + label {
+    color: red;
 }
