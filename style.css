@@ -1,6 +1,6 @@
 body div {
     margin: 10px;
-    padding: 8px;
+    padding: 10px;
 }
 /*blue  border when text box is focused*/
 input:focus {
@@ -22,4 +22,33 @@ input {
  /*non- required field label changes into yellow color after mouseover*/
 .non-mandatory:hover {
     color: yellow;
+}
+/*alternative color for course drop down*/
+.alter option:nth-child(odd){
+
+    background-color: grey;
+}
+/*alternative color for place drop down*/
+.alter2 option:nth-child(odd){
+
+    background-color: grey;
+
+}
+.alter {
+    border: 1px solid black; 
+    padding: 5px; 
+    background-color: #f9f9f9; 
+    border-radius: 4px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    
+}
+
+
+.alter2 {
+    border: 1px solid black; 
+    padding: 5px; 
+    background-color:white; 
+    border-radius: 4px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    
 }
