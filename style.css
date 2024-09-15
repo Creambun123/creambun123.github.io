@@ -16,12 +16,20 @@ input {
     color: red;
 }
  /* required field label changes into green color after mouseover*/
-.mandatory:hover {
+ .mandatory:hover {
     color: green;
+    text-decoration: underline; 
+    background-color: #e0f7e0; 
+    transition: color 0.3s ease, background-color 0.3s ease, text-decoration 0.3s ease;
 }
- /*non- required field label changes into yellow color after mouseover*/
+
+/* Changes the text color to yellow and adds other effects on hover for non-mandatory fields */
 .non-mandatory:hover {
     color: yellow;
+    font-weight: bold; 
+    background-color: #fffde7; 
+    border-bottom: 2px solid yellow; 
+    transition: color 0.3s ease, background-color 0.3s ease, font-weight 0.3s ease, border-bottom 0.3s ease; 
 }
 /*alternative color for course drop down*/
 .alter option:nth-child(odd){
@@ -40,7 +48,7 @@ input {
     padding: 5px; 
     background-color: #f9f9f9; 
     border-radius: 4px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     
 }
 
@@ -50,9 +58,10 @@ input {
     padding: 5px; 
     background-color:white; 
     border-radius: 4px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
     
 }
+/* if checkbox checked  text changes into red color*/
 #terms2:checked + label {
     color: red;
 }
