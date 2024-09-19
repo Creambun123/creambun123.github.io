@@ -2,66 +2,37 @@ body div {
     margin: 10px;
     padding: 10px;
 }
-/*blue  border when text box is focused*/
-input:focus {
-    border: 4px solid blue;
+/* 3. add prefix"*" to the unorder list*/
+ul li::before{
+     content: "*";
 }
-/*textbox with curvy edges*/
-input {
-    border-radius: 5px;
+/*4. to select the second last child of  unordered list*/
+ul li:nth-last-child(2){
+    color: blue;
 }
-  /*star symbol after the  required field label*/
-.mandatory::after {
-    content: "*";
-    color: red;
-}
- /* required field label changes into green color after mouseover*/
- .mandatory:hover {
-    color: green;
-    text-decoration: underline; 
-    background-color: #e0f7e0; 
-    transition: color 0.3s ease, background-color 0.3s ease, text-decoration 0.3s ease;
-}
-
-/* Changes the text color to yellow and adds other effects on hover for non-mandatory fields */
-.non-mandatory:hover {
-    color: yellow;
-    font-weight: bold; 
-    background-color: #fffde7; 
-    border-bottom: 2px solid yellow; 
-    transition: color 0.3s ease, background-color 0.3s ease, font-weight 0.3s ease, border-bottom 0.3s ease; 
-}
-/*alternative color for course drop down*/
-.alter option:nth-child(odd){
-
-    background-color: grey;
-}
-/*alternative color for place drop down*/
-.alter2 option:nth-child(odd){
-
-    background-color: grey;
-
-}
-/*adding box shadow for couse dropdown*/
-.alter {
-    border: 1px solid black; 
-    padding: 5px; 
-    background-color: #f9f9f9; 
-    border-radius: 4px; 
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+.container {
+    display: flex;
     
-}
-
-/*adding box shadow for place dropdown*/
-.alter2 {
-    border: 1px solid black; 
-    padding: 5px; 
-    background-color:white; 
-    border-radius: 4px; 
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
-    
-}
-/* if checkbox checked  text changes into red color*/
-#terms2:checked + label {
-    color: red;
-}
+  }
+  .fact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .descending {
+    display: flex;
+    flex-direction: row-reverse;
+    float: left;
+  }
+  .center {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .item:first-child {
+    grid-column: 1 / 3;
+  }
+  .container2 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
