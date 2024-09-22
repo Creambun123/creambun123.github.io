@@ -4,7 +4,7 @@
   position: static;
   width: 100px;
   height: 100px;
-  left: 50px;
+  left: 0;
   background-color: aqua;
 }
 
@@ -16,7 +16,7 @@
   height: 100px;
   background-color: chartreuse;
   top: 10px;
-  left: 50px;
+  left: P0px;
   margin: 10px;
 }
 
@@ -51,4 +51,30 @@
   background-color: rgb(226, 43, 183);
   top: 0; 
   left: 50px;
+}
+
+.columns {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  margin-bottom: 20px; 
+}
+.column1, .column2, .column3 {
+  padding: 5px;
+  background-color: #f0f0f0;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.rows {
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; 
+}
+
+.row1, .row2, .row3 {
+  padding: 10px;
+  background-color: #e0e0e0;
+  text-align: center;
+  border: 1px solid #ccc;
 }
